@@ -407,11 +407,12 @@ install_headers(
   'Include/RmlUi/Lua/LuaType.h',
   'Include/RmlUi/Lua/Utilities.h',
   'Include/RmlUi/SVG/ElementSVG.h',
-  subdir: 'RmlUi'
+  subdir: 'RmlUi',
 )
 
 # Make headers available to the parent project
 rmlui_dep = declare_dependency(
   include_directories: inc_dirs,
   link_with: rmlui_core,
+  compile_args: compile_args,
 )
