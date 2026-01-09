@@ -272,6 +272,7 @@ if font_engine == 'freetype'
     'Source/Core/FontEngineDefault/FontProvider.cpp',
     'Source/Core/FontEngineDefault/FreeTypeInterface.cpp',
   ]
+  compile_args += '-DRMLUI_FONT_ENGINE_FREETYPE'
 endif
 
 # Library
